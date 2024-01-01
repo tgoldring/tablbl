@@ -8,7 +8,7 @@
 {title:Title}
 
 {phang}
-{bf:tablbl} {hline 2} Tabulate values showing both values and user-defined value labels
+{bf:tablbl} {hline 2} Tabulate variables showing both values and user-defined value labels
 
 
 {marker syntax}{title:Syntax}
