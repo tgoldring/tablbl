@@ -1,11 +1,11 @@
-*! version 0.1  31dec2023  Thomas Goldring, thomasgoldring@gmail.com
+*! version 0.2  01jan2024  Thomas Goldring, thomasgoldring@gmail.com
 program tablbl
-	version 8
-	syntax varlist(min=1 max=2) [if] [in] [fweight aweight iweight] [, Mask(string asis) *]
+  version 8
+  syntax varlist(min=1 max=2) [if] [in] [fweight aweight iweight] [, Mask(string asis) *]
   
-	foreach v in `varlist' {
-		local lblname : value label `v'
-		if "`lblname'" != "" {
+  foreach v in `varlist' {
+    local lblname : value label `v'
+    if "`lblname'" != "" {
       tempvar V
       tempfile file1 file2
       tempname lblin lblout lbltmp
@@ -26,12 +26,12 @@ program tablbl
       
       qui do `"`file2'"' 
       
-			numlabel `lbltmp', add mask(`mask')
-			label val `V' `lbltmp'
-			local newlist `newlist' `V'
-		}
-		else local newlist `newlist' `v'
-	}
+      numlabel `lbltmp', add mask(`mask')
+      label val `V' `lbltmp'
+      local newlist `newlist' `V'
+    }
+    else local newlist `newlist' `v'
+  }
   
-	tab `newlist' `if' `in' [`weight' `exp'] , `options'
+  tab `newlist' `if' `in' [`weight' `exp'] , `options'
 end
