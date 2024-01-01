@@ -9,7 +9,7 @@ Type the following command:
 
 Alternatively, you can [download the package from GitHub](https://github.com/tgoldring/tablbl) and install it manually.
 
-## Example - No-Fault Divorce Laws
+## Example
 
     sysuse auto2
 
