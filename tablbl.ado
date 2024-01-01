@@ -10,7 +10,7 @@ program tablbl
       tempfile file1 file2
       tempname lblin lblout lbltmp
       
-      clonevar `V' = `v'
+      qui clonevar `V' = `v'
       
       qui label save `lblname' using `"`file1'"'
       file open `lblin' using `"`file1'"', r
