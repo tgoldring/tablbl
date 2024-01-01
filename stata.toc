@@ -1,0 +1,3 @@
+v 1
+d Thomas Goldring, thomasgoldring@gmail.com
+p tablbl tabulate values showing both values and user-defined value labels

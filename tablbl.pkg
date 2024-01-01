@@ -1,0 +1,5 @@
+v 1
+d tablbl.  tabulate values showing both values and user-defined value labels.
+d Thomas Goldring, thomasgoldring@gmail.com
+f tablbl.ado
+f tablbl.sthlp
